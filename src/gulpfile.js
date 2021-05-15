@@ -1,5 +1,5 @@
- const { watch } = require('chokidar');
-const gulp  = require('gulp');
+
+ const gulp  = require('gulp');
  const sass = require('gulp-sass');
 
 // gulp.task('buildSass',function(done){

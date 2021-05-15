@@ -52,7 +52,7 @@ class Citys{
     }
 }
 
-new Citys('.citys','../api/cities.json');
+new Citys('.citys','./api/cities.json');
 
 
 // 热映列表
@@ -118,7 +118,7 @@ class HotList {
             //获取每一个数据的id，跳转页面的时候拼接到地址栏上去
             id = media.getAttribute('movie_id');
 
-            location.href = `../html/03.details.html?id=${id}`
+            location.href = `./html/03.details.html?id=${id}`
         }
     }
     contains(ele,className){
@@ -154,7 +154,7 @@ class HotList {
              <p class='movie-star media-body-son'>${item.desc}</p>
              <p class='movie-num media-body-son'>${item.showInfo}</p>   
              <span class='media-body-son'><b class='bold'>${item.sc}</b>分</span>
-             <button class='buy media-body-son ${item.sc == 0?'advance':''}'>${item.sc == 0?'预售':'购票'}</button>
+             <button class='buy media-body-son ${item.sc == 0?'advance':''}' style="border:none">${item.sc == 0?'预售':'购票'}</button>
            </div>
          </div>`;
         })
@@ -174,12 +174,12 @@ class Tab {
         btns.onclick = e => {
             if (e.target.classList.contains('hot-btn')) {
     
-                location.href = '../html/index.html';
+                location.href = './index.html';
             }
 
             if (e.target.classList.contains('stay-btn')) {
                 
-                location.href = '../html/02.stay.html';
+                location.href = './html/02.stay.html';
             }
         }
     }

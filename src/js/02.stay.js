@@ -217,7 +217,7 @@ class Tab {
         btns.onclick = e => {
             if (e.target.classList.contains('hot-btn')) {
                 
-                location.href = '../html/index.html';
+                location.href = '../index.html';
             }
 
             if (e.target.classList.contains('stay-btn')) {
