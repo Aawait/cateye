@@ -1,0 +1,11 @@
+div {
+  width: 1000px;
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+  div p {
+    background-color: #50cd0e;
+    width: 100px;
+    height: 100px; }

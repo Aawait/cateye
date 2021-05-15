@@ -1,0 +1,28 @@
+@mixin flex($justify:center,$row:row,$align:center) {
+    display: flex;
+    flex-direction: $row;
+    justify-content:$justify;
+    align-items: $align;
+
+} 
+
+
+@mixin grid($row,$rowRatio,$column,$columnRatio,$gridGap){
+    display: grid;
+    grid-template-rows: repeat($row,$rowRatio);
+    grid-template-columns: repeat($column,$columnRatio);
+    grid-gap:$gridGap;
+} 
+
+div{
+    width: 1000px;
+    height: 300px;
+
+//    @include grid(2,50%,5,20%,5px);
+    @include flex();
+   p{
+       background-color: #50cd0e;
+       width: 100px;
+       height: 100px;
+   }
+} 

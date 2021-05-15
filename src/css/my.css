@@ -1,0 +1,86 @@
+html, body {
+  height: 100%; }
+
+.app {
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  .app .header .header-con {
+    width: 100%;
+    height: 7.9375rem;
+    background-color: #dd403b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .app .header .header-con .header-left {
+      height: 3.75rem;
+      display: flex;
+      align-items: center;
+      margin-right: 6.325rem; }
+      .app .header .header-con .header-left h3 {
+        letter-spacing: .1875rem;
+        margin: 0;
+        font-size: 22px;
+        color: #fff; }
+    .app .header .header-con .header-right {
+      height: 3.05rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 8.625rem;
+      border: 1px solid #cd6a66;
+      border-radius: 2.25rem;
+      margin-right: 1.25rem;
+      padding: 0 .625rem;
+      box-sizing: border-box;
+      background-color: #bc3632; }
+      .app .header .header-con .header-right i {
+        font-size: 1.825rem;
+        color: #ffffff; }
+      .app .header .header-con .header-right span {
+        height: 2.0125rem;
+        width: .0625rem;
+        background-color: #cd6a66; }
+  .app .main {
+    flex: 1;
+    background-color: #f6f6f6; }
+    .app .main .main-son {
+      padding: 0  1.25rem;
+      background-color: #fff;
+      border-top: .0625rem solid #d4d4d4;
+      border-bottom: .0625rem solid #d4d4d4;
+      margin: 1.25rem 0; }
+      .app .main .main-son div {
+        height: 5.625rem;
+        border-bottom: .0625rem solid #d4d4d4;
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .app .main .main-son div :nth-child(1) {
+          color: #000;
+          font-weight: 400; }
+        .app .main .main-son div .glyphicon-menu-right {
+          color: #ccc; }
+      .app .main .main-son :nth-last-child(1) {
+        border-bottom: none; }
+  .app .footer {
+    display: flex;
+    height: 5.9375rem;
+    padding: .625rem 0; }
+    .app .footer a {
+      color: #989898;
+      width: 33.33vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .app .footer a i {
+        font-size: 2rem;
+        margin-bottom: .625rem; }
+      .app .footer a span {
+        font-size: 1.125rem;
+        color: #989898; }
+    .app .footer .footer-active {
+      color: #dd403b; }
+      .app .footer .footer-active span {
+        color: #dd403b; }

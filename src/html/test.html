@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/test.css">
+    <script src="../js/MyPromise.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <p>p1</p>
+        <p>p2</p>
+        <p>p2</p>
+        <p>p2</p>
+        <p>p2</p>
+        <p>p2</p>
+        <p>p2</p>
+        <p>p2</p>
+    </div>
+    <script>
+        // ?ci=20&movieIds=1211382,1346626,1383416,1278054,337487,1368406,93,18167,360,1298864
+        // https://wx.maoyan.com/mmdb/movie/list/info.json?ci=20&movieIds=1352470%2C1211143%2C1396491%2C1320617%2C1302015%2C1218187%2C1250964%2C428%2C1188366%2C1229068
+        
+        let str ='?ci=20&movieIds=1352470%2C1211143%2C1396491%2C1320617%2C1302015%2C1218187%2C1250964%2C428%2C1188366%2C1229068';
+        
+        let newStr =  str.replace(/%2C/g,',');
+        console.log(newStr);
+        
+        let res = new MyPromise({
+            // url:'/maoyan'+'movie/list/info.json?ci=20&movieIds=1352470%2C1211143%2C1396491%2C1320617%2C1302015%2C1218187%2C1250964%2C428%2C1188366%2C1229068',
+
+            url:'../api/cities.json',
+        });
+       res.then(value=>{
+           value = JSON.parse(value);
+           console.log(value);
+       })
+        
+    </script>
+</body>
+
+</html>
